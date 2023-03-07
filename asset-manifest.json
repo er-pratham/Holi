@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Holi/static/css/main.54fe35f7.css",
+    "main.js": "/Holi/static/js/main.7e8ef981.js",
+    "static/js/787.ae957f91.chunk.js": "/Holi/static/js/787.ae957f91.chunk.js",
+    "static/media/1.png": "/Holi/static/media/1.376387644e5bcb976775.png",
+    "index.html": "/Holi/index.html",
+    "main.54fe35f7.css.map": "/Holi/static/css/main.54fe35f7.css.map",
+    "main.7e8ef981.js.map": "/Holi/static/js/main.7e8ef981.js.map",
+    "787.ae957f91.chunk.js.map": "/Holi/static/js/787.ae957f91.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.54fe35f7.css",
+    "static/js/main.7e8ef981.js"
+  ]
+}
