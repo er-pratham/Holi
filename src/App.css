@@ -1,38 +1,180 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+.App{
+  width: 100%;
+  background-color: yellow;
+  height: 100vh;
+  animation: main_anim;
+  animation-duration: 2s;
+  overflow: hidden;
+}
+@keyframes main_anim {
+  from{
+    width: 0;
+    height: 0;
+  }  
+  to{
+    width: 100%;
+    height:100vh;
+  }
+}
+@keyframes text_anim {
+  0%{
+    opacity: 0;
+  }  
+  50%{
+    opacity: 0;}
+    100%{
+      opacity: 1;
+    }
+}
+.App h1{
+  text-align: center;
+  font-family: 'Tilt Neon', cursive;
+  animation: text_anim;
+  animation-duration: 4s;
+}
+.App h3{
+  text-align: center;
+  animation: text_anim;
+  animation-duration: 4s;
+
+}
+@keyframes visibility_rangoli {
+  0%{
+    opacity: 0;
+  }
+  40%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.mainContent{
+  display: flex;
+  height: 85%;
+}
+.content{
+height: 100%;
+width: 70%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.content h3{
+  width: 70%;
+  margin-bottom: 30px;
+  color: royalblue;
+  font-family: 'Cookie', cursive;  
+  font-size: 2.3rem;
+}
+.content p{
+  font-size: 1.2rem;
+  padding: 10px;
+  width: 85%;
+  color: darkcyan;
+  font-family: 'Shantell Sans', cursive;
+  animation: text_anim;
+  animation-duration: 4s;
+}
+@keyframes text_anim {
+  0%{
+    opacity: 0;
+  }  
+  50%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.image{
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ img{
+  width: 100%;
+  overflow: hidden;
+  animation:  spin 20s  linear infinite;
+ }
+@keyframes spin {
+  100% {
+    transform:  rotate(360deg);
+  }
+}
+.footer{
+  /* border: 2px solid black; */
+  height: 100%;
+  padding-top: 40px;
+  animation: text_anim;
+  animation-duration: 4s;
+
+}
+.footer p{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.footer p a{
+  text-decoration: none;
+  color: red;
+  font-family: 'Tilt Neon', cursive;
 }
+ @media only screen and (min-width: 1023px) {
+  .content h3{
+    font-size: 1.4rem;
+    margin-top:0;
+    margin-bottom: 10px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  }
+  .content p{
+    font-size: .9rem;
+  }
+  .footer{
+    padding-top: 5px;
+  }
+  .mainContent{
+    height: 80%;
   }
 }
+@media only screen and (max-width: 1023px) {
+  .content h3{
+    font-size: 1rem;
+    margin-top:0;
+    margin-bottom: 0;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+  .content p{
+    font-size: .8rem;
+  }
+  .footer{
+    padding-top: 5px;
+  }
+  .mainContent{
+    height: 80%;
   }
 }
+@media only screen and (max-width: 768px) {
+  .content h3{
+    font-size: .8rem;
+    margin-top:0;
+    margin-bottom: 0;
+
+  }
+  .content p{
+    font-size: .6rem;
+  }
+  .footer{
+    padding-top: 0px;
+  }
+  .mainContent{
+    height: 80%;
+  }
+} 
